@@ -1,0 +1,263 @@
+<!DOCTYPE html>
+<html lang="en">
+
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">   
+  
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+ 
+
+    <title>Pratik GC</title>  
+    <meta name="keywords" content="Shree Moti Secondary School">
+    <meta name="description" content="School Project">
+    <meta name="author" content="Pratik GC">
+<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.6.3/css/all.css" integrity="sha384-UHRtZLI+pbxtHCWp1t77Bi1L4ZtiqrqD80Kn4Z8NTSRyMA2Fd33n5dQ8lWUE00s/" crossorigin="anonymous">
+<link rel="stylesheet" type="text/css" href="gallery.css">
+    <link rel="shortcut icon" href="images/favicon.png" type="image/x-icon" />
+    <link rel="apple-touch-icon" href="images/apple-touch-icon.png">
+
+  
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+
+    <link rel="stylesheet" href="style.css">
+   
+    <link rel="stylesheet" href="css/versions.css">
+
+    <link rel="stylesheet" href="css/responsive.css">
+
+    <link rel="stylesheet" href="css/custom.css">
+<link rel="stylesheet" href="gallery.css">
+ 
+    <script src="js/modernizer.js"></script>
+</head>
+<body class="host_version"> 
+  <div class="modal fade" id="login" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
+    <div class="modal-dialog modal-dialog-centered modal-lg" role="document">
+    <div class="modal-content">
+      <div class="modal-header tit-up">
+        <button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
+        <h4 class="modal-title">User Login</h4>
+      </div>
+      <div class="modal-body customer-box">
+        <ul class="nav nav-tabs">
+          <li><a class="active" href="#Login" data-toggle="tab">Login</a></li>
+          <li><a href="#Registration" data-toggle="tab">Registration</a></li>
+        </ul>
+        <div class="tab-content">
+          <div class="tab-pane active" id="Login">
+            <form role="form" class="form-horizontal">
+              <div class="form-group">
+                <div class="col-sm-12">
+                  <input class="form-control" id="email1" placeholder="Name" type="text">
+                </div>
+              </div>
+              <div class="form-group">
+                <div class="col-sm-12">
+                  <input class="form-control" id="exampleInputPassword1" placeholder="Email" type="email">
+                </div>
+              </div>
+              <div class="row">
+                <div class="col-sm-10">
+                  <button type="submit" class="btn btn-light btn-radius btn-brd grd1">
+                    Submit
+                  </button>
+                  <a class="for-pwd" href="javascript:;">Forgot your password?</a>
+                </div>
+              </div>
+            </form>
+          </div>
+          <div class="tab-pane" id="Registration">
+            <form role="form" class="form-horizontal">
+              <div class="form-group">
+                <div class="col-sm-12">
+                  <input class="form-control" placeholder="Name" type="text">
+                </div>
+              </div>
+              <div class="form-group">
+                <div class="col-sm-12">
+                  <input class="form-control" id="email" placeholder="Email" type="email">
+                </div>
+              </div>
+              <div class="form-group">
+                <div class="col-sm-12">
+                  <input class="form-control" id="mobile" placeholder="Mobile" type="email">
+                </div>
+              </div>
+              <div class="form-group">
+                <div class="col-sm-12">
+                  <input class="form-control" id="password" placeholder="Password" type="password">
+                </div>
+              </div>
+              <div class="row">             
+                <div class="col-sm-10">
+                  <button type="button" class="btn btn-light btn-radius btn-brd grd1">
+                    Save &amp; Continue
+                  </button>
+                  <button type="button" class="btn btn-light btn-radius btn-brd grd1">
+                    Cancel</button>
+                </div>
+              </div>
+            </form>
+          </div>
+        </div>
+      </div>
+    </div>
+    </div>
+  </div>
+
+
+  <div id="preloader">
+    <div class="loader-container">
+      <div class="progress-br float shadow">
+        <div class="progress__item"></div>
+      </div>
+    </div>
+  </div>
+  <header class="top-navbar">
+    <nav class="navbar navbar-expand-lg navbar-light bg-light">
+      <div class="container-fluid">
+        
+          <img src="images/logo.png" alt="" />
+        </a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbars-host" aria-controls="navbars-rs-food" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbars-host">
+          <ul class="navbar-nav ml-auto">
+            <li class="nav-item"><a class="nav-link" href="index.html">Home</a></li>
+           <li class="nav-item dropdown">
+              <a class="nav-link dropdown-toggle" href="#" id="dropdown-a" data-toggle="dropdown">About US </a>
+              <div class="dropdown-menu" aria-labelledby="dropdown-a">
+                <a class="dropdown-item" href="about.html">About </a>
+              
+                <a class="dropdown-item" href="team.html">Our Team </a>
+              </div>
+            </li>
+            
+            
+
+            <li class="nav-item"><a class="nav-link" href="course.html">Course</a></li>
+
+            
+            <li class="nav-item"><a class="nav-link" href="teachers.html">Teachers</a></li>
+            <li class="nav-item active"><a class="nav-link" href="gallery.html">Gallery</a></li>
+            <li class="nav-item"><a class="nav-link" href="contact.html">Contact</a></li>
+          </ul>
+          <ul class="nav navbar-nav navbar-right">
+                        <li><a class="hover-btn-new log orange" href="#" data-toggle="modal" data-target="#login"><span>Sign in</span></a></li>
+                    </ul>
+        </div>
+      </div>
+    </nav>
+  </header>
+  <div class="all-title-box">
+    <div class="container text-center">
+      <h1>School Gallery</h1>
+    </div>
+  </div>
+  
+<div class="container">
+  <div class="top">
+      <ul>
+          
+            <li><a href="#img_5"><img src="https://image.freepik.com/free-photo/sunlight-in-the-forest_1004-9.jpg"></a></li>
+            <li><a href="#img_6"><img src="https://image.freepik.com/free-photo/road-curve-landscape_426-19324358.jpg"></a></li>
+            <li><a href="#img_7"><img src="https://image.freepik.com/free-photo/shiny-lights_385-19321244.jpg"></a></li>
+            <li><a href="#img_8"><img src="https://image.freepik.com/free-photo/skyscraper-with-clouds-reflection_23-10.jpg"></a></li>
+            <li><a href="#img_9"><img src="https://image.freepik.com/free-photo/foggy-pine-forest_426-19323742.jpg"></a></li>
+            <li><a href="#img_10"><img src="https://image.freepik.com/free-photo/working-from-bed_385-19324222.jpg"></a></li>
+            <li><a href="#img_11"><img src="https://image.freepik.com/free-photo/a-sky-full-of-stars_426-19320899.jpg"></a></li>
+            <li><a href="#img_12"><img src="https://image.freepik.com/free-photo/city-in-bokeh_426-19322711.jpg"></a></li>
+            <li><a href="#img_13"><img src="https://image.freepik.com/free-photo/desert-and-the-road_426-19314945.jpg"></a></li>
+            <li><a href="#img_14"><img src="https://image.freepik.com/free-photo/sunlight-through-the-grass_385-19321333.jpg"></a></li>
+            <li><a href="#img_15"><img src="https://image.freepik.com/free-photo/colorful-springtime_385-19321241.jpg"></a></li>
+            <li><a href="#img_16"><img src="https://image.freepik.com/free-photo/from-blue-to-brown_426-19320820.jpg"></a></li>
+        </ul>
+        <a href="#_1" class="lightbox trans" id="img_1"><img src="https://farm8.staticflickr.com/7564/16097104758_e60521f7fa_b.jpg"></a>
+        <a href="#_2" class="lightbox trans" id="img_2"><img src="https://picjumbo.imgix.net/HNCK4011.jpg?q=40&w=1650&sharp=30"></a>
+        <a href="#_3" class="lightbox trans" id="img_3"><img src="https://images.unsplash.com/32/Mc8kW4x9Q3aRR3RkP5Im_IMG_4417.jpg?ixlib=rb-0.3.5&q=80&fm=jpg&crop=entropy&w=1080&fit=max&s=46a85a1451e47aea5152ade8299f2894"></a>
+        <a href="#_4" class="lightbox trans" id="img_4"><img src="https://picjumbo.imgix.net/HNCK3991.jpg?q=40&w=1650&sharp=30"></a>
+        <a href="#_5" class="lightbox trans" id="img_5"><img src="https://image.freepik.com/free-photo/sunlight-in-the-forest_1004-9.jpg"></a>
+        <a href="#_6" class="lightbox trans" id="img_6"><img src="https://image.freepik.com/free-photo/road-curve-landscape_426-19324358.jpg"></a>
+        <a href="#_7" class="lightbox trans" id="img_7"><img src="https://image.freepik.com/free-photo/shiny-lights_385-19321244.jpg"></a>
+        <a href="#_8" class="lightbox trans" id="img_8"><img src="https://image.freepik.com/free-photo/skyscraper-with-clouds-reflection_23-10.jpg"></a>
+        <a href="#_9" class="lightbox trans" id="img_9"><img src="https://image.freepik.com/free-photo/foggy-pine-forest_426-19323742.jpg"></a>
+        <a href="#_10" class="lightbox trans" id="img_10"><img src="https://image.freepik.com/free-photo/working-from-bed_385-19324222.jpg"></a>
+        <a href="#_11" class="lightbox trans" id="img_11"><img src="https://image.freepik.com/free-photo/a-sky-full-of-stars_426-19320899.jpg"></a>
+        <a href="#_12" class="lightbox trans" id="img_12"><img src="https://image.freepik.com/free-photo/city-in-bokeh_426-19322711.jpg"></a>
+        <a href="#_13" class="lightbox trans" id="img_13"><img src="https://image.freepik.com/free-photo/desert-and-the-road_426-19314945.jpg"></a>
+        <a href="#_14" class="lightbox trans" id="img_14"><img src="https://image.freepik.com/free-photo/sunlight-through-the-grass_385-19321333.jpg"></a>
+        <a href="#_15" class="lightbox trans" id="img_15"><img src="https://image.freepik.com/free-photo/colorful-springtime_385-19321241.jpg"></a>
+        <a href="#_16" class="lightbox trans" id="img_16"><img src="https://image.freepik.com/free-photo/from-blue-to-brown_426-19320820.jpg"></a>
+    </div>
+</div>
+
+
+    <footer class="footer">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-4 col-md-4 col-xs-12">
+                    <div class="widget clearfix">
+                        <div class="widget-title">
+                            <h3>About US</h3>
+                        </div>
+                        <p> Moti Mavi School, located in the airawati-2 baraula, Pyuthan 
+.</p>   
+            <div class="footer-right">
+              <ul class="footer-links-soi">
+                <li><a href="https://www.facebook.com/pratikgc11"><i class="fa fa-facebook"></i></a></li>
+                <li><a href="https://www.youtube.com/channel/UC8rm414ewwa9IEjp4INQYXQ"><i class="fa fa-youtube"></i></a></li>
+            </div>            
+                    </div>
+                </div>
+
+      
+        
+                <div class="col-lg-4 col-md-4 col-xs-12">
+                    <div class="widget clearfix">
+                        <div class="widget-title">
+                            <h3>Contact Details</h3>
+                        </div>
+
+                        <ul class="footer-links">
+                            <li><a href="mailto:#">pratikgc11111@gmail.com</a></li>
+                            <li><a href="mailto:#">motimavibaraula2022@gmail.com</a></li>
+                          
+                            <li>9822983064</li>
+                        </ul>
+                    </div>
+                </div>
+        
+            </div>
+        </div>
+    </footer>
+
+    <div class="copyrights">
+        <div class="container">
+            <div class="footer-distributed">
+                <div class="footer-center">                   
+                    <p class="footer-company-name">Copyright &copy; 2022 All Rights Reserved | <a href="#">Pratik GC</a> </p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <a href="#" id="scroll-to-top" class="dmtop global-radius"><i class="fa fa-angle-up"></i></a>
+
+    <script src="js/all.js"></script>
+
+    <script src="js/custom.js"></script>
+  <script src="js/timeline.min.js"></script>
+  <script>
+    timeline(document.querySelectorAll('.timeline'), {
+      forceVerticalMode: 700,
+      mode: 'horizontal',
+      verticalStartPosition: 'left',
+      visibleItems: 4
+    });
+  </script>
+</body>
+
+</html>

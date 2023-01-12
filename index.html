@@ -1,0 +1,464 @@
+<!DOCTYPE html>
+<html lang="en">
+
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">   
+  
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+ 
+
+    <title>Pratik GC</title>  
+    <meta name="keywords" content="Shree Moti Secondary School">
+    <meta name="description" content="School Project">
+    <meta name="author" content="Pratik GC">
+
+    <link rel="shortcut icon" href="images/favicon.png" type="image/x-icon" />
+    <link rel="apple-touch-icon" href="images/apple-touch-icon.png">
+
+  
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+
+    <link rel="stylesheet" href="style.css">
+   <link rel="stylesheet" href="pratik.css">
+    <link rel="stylesheet" href="css/versions.css">
+
+    <link rel="stylesheet" href="css/responsive.css">
+
+    <link rel="stylesheet" href="css/custom.css">
+
+
+     <link href="img/favicon.ico" rel="icon">
+
+    <script src="js/modernizer.js"></script>
+</head>
+<body class="host_version"> 
+	<div class="modal fade" id="login" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
+	  <div class="modal-dialog modal-dialog-centered modal-lg" role="document">
+		<div class="modal-content">
+			<div class="modal-header tit-up">
+				<button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
+				<h4 class="modal-title">User Login</h4>
+			</div>
+			<div class="modal-body customer-box">
+				<ul class="nav nav-tabs">
+					<li><a class="active" href="#Login" data-toggle="tab">Login</a></li>
+					<li><a href="#Registration" data-toggle="tab">Registration</a></li>
+				</ul>
+				<div class="tab-content">
+					<div class="tab-pane active" id="Login">
+						<form role="form" class="form-horizontal">
+							<div class="form-group">
+								<div class="col-sm-12">
+									<input class="form-control" id="email1" placeholder="Name" type="text">
+								</div>
+							</div>
+							<div class="form-group">
+								<div class="col-sm-12">
+									<input class="form-control" id="exampleInputPassword1" placeholder="Email" type="email">
+								</div>
+							</div>
+							<div class="row">
+								<div class="col-sm-10">
+									<button type="submit" class="btn btn-light btn-radius btn-brd grd1">
+										Submit
+									</button>
+									<a class="for-pwd" href="javascript:;">Forgot your password?</a>
+								</div>
+							</div>
+						</form>
+					</div>
+					<div class="tab-pane" id="Registration">
+						<form role="form" class="form-horizontal">
+							<div class="form-group">
+								<div class="col-sm-12">
+									<input class="form-control" placeholder="Name" type="text">
+								</div>
+							</div>
+							<div class="form-group">
+								<div class="col-sm-12">
+									<input class="form-control" id="email" placeholder="Email" type="email">
+								</div>
+							</div>
+							<div class="form-group">
+								<div class="col-sm-12">
+									<input class="form-control" id="mobile" placeholder="Mobile" type="email">
+								</div>
+							</div>
+							<div class="form-group">
+								<div class="col-sm-12">
+									<input class="form-control" id="password" placeholder="Password" type="password">
+								</div>
+							</div>
+							<div class="row">							
+								<div class="col-sm-10">
+									<button type="button" class="btn btn-light btn-radius btn-brd grd1">
+										Save &amp; Continue
+									</button>
+									<button type="button" class="btn btn-light btn-radius btn-brd grd1">
+										Cancel</button>
+								</div>
+							</div>
+						</form>
+					</div>
+				</div>
+			</div>
+		</div>
+	  </div>
+	</div>
+
+
+	<div id="preloader">
+		<div class="loader-container">
+			<div class="progress-br float shadow">
+				<div class="progress__item"></div>
+			</div>
+		</div>
+	</div>
+	<header class="top-navbar">
+		<nav class="navbar navbar-expand-lg navbar-light bg-light">
+			<div class="container-fluid">
+				
+					<img src="images/logo.png" alt="" />
+				</a>
+				<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbars-host" aria-controls="navbars-rs-food" aria-expanded="false" aria-label="Toggle navigation">
+					<span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+				</button>
+				<div class="collapse navbar-collapse" id="navbars-host">
+					<ul class="navbar-nav ml-auto">
+						<li class="nav-item active"><a class="nav-link" href="index.html">Home</a></li>
+						<li class="nav-item dropdown">
+							<a class="nav-link dropdown-toggle" href="#" id="dropdown-a" data-toggle="dropdown">About US </a>
+							<div class="dropdown-menu" aria-labelledby="dropdown-a">
+								<a class="dropdown-item" href="about.html">About </a>
+							
+								<a class="dropdown-item" href="team.html">Our Team </a>
+							</div>
+						</li>
+						
+
+						<li class="nav-item"><a class="nav-link" href="course.html">Course</a></li>
+
+						
+						<li class="nav-item"><a class="nav-link" href="teachers.html">Teachers</a></li>
+						<li class="nav-item"><a class="nav-link" href="gallery.html">Gallery</a></li>
+						<li class="nav-item"><a class="nav-link" href="contact.html">Contact</a></li>
+					</ul>
+					<ul class="nav navbar-nav navbar-right">
+                        <li><a class="hover-btn-new log orange" href="#" data-toggle="modal" data-target="#login"><span>Sign in</span></a></li>
+                    </ul>
+				</div>
+			</div>
+		</nav>
+	</header>
+	
+	<div id="carouselExampleControls" class="carousel slide bs-slider box-slider" data-ride="carousel" data-pause="hover" data-interval="false" >
+	
+		<ol class="carousel-indicators">
+			<li data-target="#carouselExampleControls" data-slide-to="0" class="active"></li>
+			<li data-target="#carouselExampleControls" data-slide-to="1"></li>
+			<li data-target="#carouselExampleControls" data-slide-to="2"></li>
+		</ol>
+		<div class="carousel-inner" role="listbox">
+			<div class="carousel-item active">
+				<div id="home" class="first-section" style="background-image:url('images/slider-01.jpg');">
+					<div class="dtab">
+						<div class="container">
+							<div class="row">
+								<div class="col-md-12 col-sm-12 text-right">
+									<div class="big-tagline">
+										<br> <h2 text align="left"><strong>For quality education </strong> <br> Come Here</h2>
+	
+									</div>
+								</div>
+							</div>           
+						</div>
+					</div>
+				</div>
+			</div>
+
+
+
+
+
+			<div class="carousel-item">
+				<div id="home" class="first-section" style="background-image:url('images/slider-02.jpg');">
+					
+				</div>
+			</div>
+			<div class="carousel-item">
+				<div id="home" class="first-section" style="background-image:url('images/slider-03.jpg');">
+					
+				</div>
+			</div>
+		
+			<a class="new-effect carousel-control-prev" href="#carouselExampleControls" role="button" data-slide="prev">
+				<span class="fa fa-angle-left" aria-hidden="true"></span>
+				<span class="sr-only">Previous</span>
+			</a>
+
+			<a class="new-effect carousel-control-next" href="#carouselExampleControls" role="button" data-slide="next">
+				<span class="fa fa-angle-right" aria-hidden="true"></span>
+				<span class="sr-only">Next</span>
+			</a>
+		</div>
+	</div>
+	
+    <div id="overviews" class="section wb">
+        <div class="container">
+            <div class="section-title row text-center">
+                <div class="col-md-8 offset-md-2">
+                    <h3>About</h3>
+                    <p class="pratik">Moti secondary school is one of the famous school in the eastern part of Pyuthan district. </p>
+                </div>
+            </div>
+        
+
+ <div class="row align-items-center">
+                <div class="col-xl-6 col-lg-6 col-md-12 col-sm-12">
+                    <div class="message-box">
+                        <h4>BEST SCHOOL OF ALL TIME</h4>
+                        <h2>Welcome to moti mavi school</h2>
+                        <p>It is a model school declared by the central government of Nepal. There are classes from ecd (early childhood development) to 12 classes. There are three faculties in secondary level. They are education, commerce and computer engineering faculties. It is located in the ward no-2 of Airawati rural municipality, in Baraula.</p>
+
+                        <p> They are education, commerce and computer engineering faculties. It is located in the ward no-2 of Airawati rural municipality, in Baraula.</p>
+
+                        <a href="https://www.facebook.com/motimv.bataula" class="hover-btn-new orange"><span>Learn More</span></a>
+                    </div><!-- end messagebox -->
+                </div><!-- end col -->
+				
+				<div class="col-xl-6 col-lg-6 col-md-12 col-sm-12">
+                    <div class="post-media wow fadeIn">
+                        <img src="images/about_02.jpg" alt="" class="img-fluid img-rounded">
+                    </div><!-- end media -->
+                </div><!-- end col -->
+			</div>
+			<div class="row align-items-center">
+				<div class="col-xl-6 col-lg-6 col-md-12 col-sm-12">
+                    <div class="post-media wow fadeIn">
+                        <img src="images/about_03.jpg" alt="" class="img-fluid img-rounded">
+                    </div><!-- end media -->
+                </div><!-- end col -->
+				
+				<div class="col-xl-6 col-lg-6 col-md-12 col-sm-12">
+                    <div class="message-box">
+                        <h4> School Games sports and activities</h4>
+                        <h2>Cricket</h2>
+                        <p>Cricket is a team sport which provides children and young people with a variety of skills needed to develop a lifelong love of sport and physical activity. It is fun, inclusive, and the sport provides a wealth of opportunities to take part. </p>
+
+                        <p> We want children of all ages and abilities to have a positive experience of cricket, both as a participant or a leader, so that they will want to play or lead more in the future..So, we organize cricket tournament in our school in the gap of 6 months.</p>
+
+                        <a href="https://www.facebook.com/motimv.bataula" class="hover-btn-new orange"><span>Learn More</span></a>
+                    </div><!-- end messagebox -->
+                </div><!-- end col -->
+				
+            </div><!-- end row -->
+        </div><!-- end container -->
+    </div><!-- end section -->
+
+    <section class="section lb page-section">
+		<div class="container">
+			 <div class="section-title row text-center">
+                <div class="col-md-8 offset-md-2">
+                    <h3>Our Vision, Mission, Goals and Objectives</h3>
+                    
+                </div>
+            </div><!-- end title -->
+			<div class="timeline">
+				<div class="timeline__wrap">
+					<div class="timeline__items">
+						<div class="timeline__item">
+							<div class="timeline__content img-bg-01">
+								<h2>Our Vision</h2>
+								<p>Our vision is to develop well rounded, confident and responsible individuals who aspire to achieve their full potential.Our Vision is a community where all children feel loved, respected and encouraged to develop to their fullest potential. </p>
+							</div>
+						</div>
+						<div class="timeline__item">
+							<div class="timeline__content img-bg-02">
+								<h2>Mission</h2>
+								<p>Our Mission is to provide high quality education and childcare in a safe, respectful and inclusive environment that builds a foundation for life-long learning.</p>
+							</div>
+						</div>
+						<div class="timeline__item">
+							<div class="timeline__content img-bg-03">
+								<h2>Goals</h2>
+								<p>Our goal is to support and nurture the children’s and our own natural desire to be life-long learners. We are committed to the families we serve, providing support and encouragement.Our goal is to build skills that set children up for success</p>
+							</div>
+						</div>
+						<div class="timeline__item">
+							<div class="timeline__content img-bg-04">
+								<h2>Objectives</h2>
+								<p>Objectives of Moti Mavi are Academic Programs, Advocacy on Engineering Policies, Rules and Regulations, Resource Planning.</p>
+							</div>
+						</div>
+					
+				</div>
+			</div>
+		</div>
+	</section>
+
+
+
+
+
+
+
+
+
+
+
+    <div id="testimonials" class="parallax section db parallax-off" style="background-image:url('images/slider-01.jpg');">
+        <div class="container">
+            <div class="section-title text-center">
+                <h3>Message from teacher</h3>
+               
+            </div><!-- end title -->
+
+            <div class="row">
+                <div class="col-md-12 col-sm-12">
+                    <div class="testi-carousel owl-carousel owl-theme">
+                        <div class="testimonial clearfix">
+							<div class="testi-meta">
+                                <img src="images/t.png" alt="" class="img-fluid">
+                                <h4>Tilak Ram Pandey</h4>
+                            </div>
+                            <div class="desc">
+                                <h3><i class="fa fa-quote-left"></i> Principle</h3>
+                                <p class="lead">Our idea behind true education has always been providing something that suits the best to every individual mind. There is no readymade formula of success. it is highly subjective in nature.</p>
+                            </div>
+                            <!-- end testi-meta -->
+                        </div>
+                        <!-- end testimonial -->
+
+                        <div class="testimonial clearfix">
+							<div class="testi-meta">
+                                <img src="images/deviram.png" alt="" class="img-fluid">
+                                <h4>Devi Ram Pokhrel</h4>
+                            </div>
+                            <div class="desc">
+                                <h3><i class="fa fa-quote-left"></i> Vice-Principle</h3>
+                                <p class="lead">We believe in the perfection that exists in each individual and that can be manifested through the right guidance on the part of the school. There is a spark of genius in every student which needs a teacher to kindle it.</p>
+                            </div>
+                            <!-- end testi-meta -->
+                        </div>
+                        <!-- end testimonial -->
+
+
+
+                        <div class="testimonial clearfix">
+							<div class="testi-meta">
+                                <img src="images/anil.png" alt="" class="img-fluid ">
+                                <h4>ER. Anil Kumar Thakhur </h4>
+                            </div>
+                            <div class="desc">
+                                <h3><i class="fa fa-quote-left"></i> IT Co-Ordinator
+</h3>
+                                <p class="lead">Our goal is to build a sense of community and trust between children, parents, and staff.  We mainly focus on empowering our students and highlighting their leadership skills.  </p>
+                            </div>
+                            <!-- end testi-meta -->
+                        </div>
+                        <!-- end testimonial -->
+                       
+                    </div><!-- end carousel -->
+                </div><!-- end col -->
+            </div><!-- end row -->
+        </div><!-- end container -->
+    </div><!-- end section -->
+
+
+
+
+	<div class="section cl">
+		<div class="container">
+			<div class="row text-left stat-wrap">
+				<div class="col-md-4 col-sm-4 col-xs-12">
+					<span data-scroll class="global-radius icon_wrap effect-1 alignleft"><i class="flaticon-study"></i></span>
+					<p class="stat_count">850</p>
+					<h3>Students</h3>
+				</div><!-- end col -->
+
+				<div class="col-md-4 col-sm-4 col-xs-12">
+					<span data-scroll class="global-radius icon_wrap effect-1 alignleft"><i class="flaticon-online"></i></span>
+					<p class="stat_count">5</p>
+					<h3>Courses</h3>
+				</div><!-- end col -->
+
+				<div class="col-md-4 col-sm-4 col-xs-12">
+					<span data-scroll class="global-radius icon_wrap effect-1 alignleft"><i class="flaticon-years"></i></span>
+					<p class="stat_count">57</p>
+					<h3>Years Completed</h3>
+				</div><!-- end col -->
+			</div><!-- end row -->
+		</div><!-- end container -->
+	</div><!-- end section -->
+
+
+
+
+
+    <footer class="footer">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-4 col-md-4 col-xs-12">
+                    <div class="widget clearfix">
+                        <div class="widget-title">
+                            <h3>About US</h3>
+                        </div>
+                        <p> Moti Mavi School, located in the airawati-2 baraula, Pyuthan 
+.</p>   
+						<div class="footer-right">
+							<ul class="footer-links-soi">
+								<li><a href="https://www.facebook.com/pratikgc11"><i class="fa fa-facebook"></i></a></li>
+								<li><a href="https://www.youtube.com/channel/UC8rm414ewwa9IEjp4INQYXQ"><i class="fa fa-youtube"></i></a></li>
+						</div>						
+                    </div>
+                </div>
+
+			
+				
+                <div class="col-lg-4 col-md-4 col-xs-12">
+                    <div class="widget clearfix">
+                        <div class="widget-title">
+                            <h3>Contact Details</h3>
+                        </div>
+
+                        <ul class="footer-links">
+                            <li><a href="mailto:#">pratikgc11111@gmail.com</a></li>
+                            <li><a href="mailto:#">motimavibaraula2022@gmail.com</a></li>
+                          
+                            <li>9822983064</li>
+                        </ul>
+                    </div>
+                </div>
+				
+            </div>
+        </div>
+    </footer>
+
+    <div class="copyrights">
+        <div class="container">
+            <div class="footer-distributed">
+                <div class="footer-center">                   
+                    <p class="footer-company-name">Copyright &copy; 2022 All Rights Reserved | <a href="https://www.facebook.com/pratikgc11">Pratik GC</a> </p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <a href="#" id="scroll-to-top" class="dmtop global-radius"><i class="fa fa-angle-up"></i></a>
+
+    <script src="js/all.js"></script>
+
+    <script src="js/custom.js"></script>
+	<script src="js/timeline.min.js"></script>
+	<script>
+		timeline(document.querySelectorAll('.timeline'), {
+			forceVerticalMode: 700,
+			mode: 'horizontal',
+			verticalStartPosition: 'left',
+			visibleItems: 4
+		});
+	</script>
+</body>
+</html>

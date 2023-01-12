@@ -1,0 +1,331 @@
+<!DOCTYPE html>
+<html lang="en">
+
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">   
+  
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+ 
+
+    <title>Pratik GC</title>  
+    <meta name="keywords" content="Shree Moti Secondary School">
+    <meta name="description" content="School Project">
+    <meta name="author" content="Pratik GC">
+
+    <link rel="shortcut icon" href="images/favicon.png" type="image/x-icon" />
+    <link rel="apple-touch-icon" href="images/apple-touch-icon.png">
+
+  
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+
+    <link rel="stylesheet" href="style.css">
+   
+    <link rel="stylesheet" href="css/versions.css">
+
+    <link rel="stylesheet" href="css/responsive.css">
+
+    <link rel="stylesheet" href="css/custom.css">
+
+ 
+    <script src="js/modernizer.js"></script>
+</head>
+<body class="host_version"> 
+	<div class="modal fade" id="login" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
+	  <div class="modal-dialog modal-dialog-centered modal-lg" role="document">
+		<div class="modal-content">
+			<div class="modal-header tit-up">
+				<button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
+				<h4 class="modal-title">User Login</h4>
+			</div>
+			<div class="modal-body customer-box">
+				<ul class="nav nav-tabs">
+					<li><a class="active" href="#Login" data-toggle="tab">Login</a></li>
+					<li><a href="#Registration" data-toggle="tab">Registration</a></li>
+				</ul>
+				<div class="tab-content">
+					<div class="tab-pane active" id="Login">
+						<form role="form" class="form-horizontal">
+							<div class="form-group">
+								<div class="col-sm-12">
+									<input class="form-control" id="email1" placeholder="Name" type="text">
+								</div>
+							</div>
+							<div class="form-group">
+								<div class="col-sm-12">
+									<input class="form-control" id="exampleInputPassword1" placeholder="Email" type="email">
+								</div>
+							</div>
+							<div class="row">
+								<div class="col-sm-10">
+									<button type="submit" class="btn btn-light btn-radius btn-brd grd1">
+										Submit
+									</button>
+									<a class="for-pwd" href="javascript:;">Forgot your password?</a>
+								</div>
+							</div>
+						</form>
+					</div>
+					<div class="tab-pane" id="Registration">
+						<form role="form" class="form-horizontal">
+							<div class="form-group">
+								<div class="col-sm-12">
+									<input class="form-control" placeholder="Name" type="text">
+								</div>
+							</div>
+							<div class="form-group">
+								<div class="col-sm-12">
+									<input class="form-control" id="email" placeholder="Email" type="email">
+								</div>
+							</div>
+							<div class="form-group">
+								<div class="col-sm-12">
+									<input class="form-control" id="mobile" placeholder="Mobile" type="email">
+								</div>
+							</div>
+							<div class="form-group">
+								<div class="col-sm-12">
+									<input class="form-control" id="password" placeholder="Password" type="password">
+								</div>
+							</div>
+							<div class="row">							
+								<div class="col-sm-10">
+									<button type="button" class="btn btn-light btn-radius btn-brd grd1">
+										Save &amp; Continue
+									</button>
+									<button type="button" class="btn btn-light btn-radius btn-brd grd1">
+										Cancel</button>
+								</div>
+							</div>
+						</form>
+					</div>
+				</div>
+			</div>
+		</div>
+	  </div>
+	</div>
+
+
+	<div id="preloader">
+		<div class="loader-container">
+			<div class="progress-br float shadow">
+				<div class="progress__item"></div>
+			</div>
+		</div>
+	</div>
+	<header class="top-navbar">
+		<nav class="navbar navbar-expand-lg navbar-light bg-light">
+			<div class="container-fluid">
+				
+					<img src="images/logo.png" alt="" />
+				</a>
+				<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbars-host" aria-controls="navbars-rs-food" aria-expanded="false" aria-label="Toggle navigation">
+					<span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+				</button>
+				<div class="collapse navbar-collapse" id="navbars-host">
+					<ul class="navbar-nav ml-auto">
+						<li class="nav-item"><a class="nav-link" href="index.html">Home</a></li>
+					<li class="nav-item dropdown">
+							<a class="nav-link dropdown-toggle" href="#" id="dropdown-a" data-toggle="dropdown">About US </a>
+							<div class="dropdown-menu" aria-labelledby="dropdown-a">
+								<a class="dropdown-item" href="about.html">About </a>
+							
+								<a class="dropdown-item" href="team.html">Our Team </a>
+							</div>
+						</li>
+						
+						
+
+						<li class="nav-item active"><a class="nav-link" href="course.html">Course</a></li>
+
+						
+						<li class="nav-item"><a class="nav-link" href="teachers.html">Teachers</a></li>
+						<li class="nav-item"><a class="nav-link" href="gallery.html">Gallery</a></li>
+						<li class="nav-item"><a class="nav-link" href="contact.html">Contact</a></li>
+					</ul>
+					<ul class="nav navbar-nav navbar-right">
+                        <li><a class="hover-btn-new log orange" href="#" data-toggle="modal" data-target="#login"><span>Sign in</span></a></li>
+                    </ul>
+				</div>
+			</div>
+		</nav>
+	</header>
+
+	
+	<div class="all-title-box">
+		<div class="container text-center">
+			<h1>Course </h1>
+		</div>
+	</div>
+	
+    
+
+            <hr class="invis"> 
+
+            <div class="row"> 
+                <div class="col-lg-3 col-md-6 col-12">
+                    <div class="course-item">
+						<div class="image-blog">
+							<img src="images/blog_2.jpg" alt="" class="img-fluid">
+						</div>
+						<div class="course-br">
+							<div class="course-title">
+								<h2><a href="computerengineering.html" title="">Computer Engineering</a></h2>
+							</div>
+							<div class="course-desc">
+								<p>Computer engineering ( CoE or CpE) is a branch of engineering that integrates several fields of computer science and electronic engineering required to develop computer hardware and software. </p>
+							</div>
+							<div class="course-rating">
+								4.5
+								<i class="fa fa-star"></i>	
+								<i class="fa fa-star"></i>	
+								<i class="fa fa-star"></i>	
+								<i class="fa fa-star"></i>	
+								<i class="fa fa-star-half"></i>								
+							</div>
+						</div>
+						<div class="course-meta-bot">
+							<ul>
+								<li><i class="fa fa-calendar" aria-hidden="true"></i> 1 year</li>
+								<li><i class="fa fa-users" aria-hidden="true"></i> 48 Student</li>
+								<li><i class="fa fa-book" aria-hidden="true"></i> 10 Books</li>
+							</ul>
+						</div>
+					</div>
+                </div>
+
+                <div class="col-lg-3 col-md-6 col-12">
+                    <div class="course-item">
+						<div class="image-blog">
+							<img src="images/blog_1.jpg" alt="" class="img-fluid">
+						</div>
+						<div class="course-br">
+							<div class="course-title">
+								<h2><a href="https://en.wikipedia.org/wiki/Education" title="">Education</a></h2>
+							</div>
+							<div class="blog-desc">
+								<p>Education is a purposeful activity directed at achieving certain aims, such as transmitting knowledge or fostering skills and character traits. These aims may include the development of understanding, rationality, kindness, and honesty.</p>
+							</div>
+							<div class="course-rating">
+								4.5
+								<i class="fa fa-star"></i>	
+								<i class="fa fa-star"></i>	
+								<i class="fa fa-star"></i>	
+								<i class="fa fa-star"></i>	
+								<i class="fa fa-star-half"></i>								
+							</div>
+						</div>
+						<div class="course-meta-bot">
+							<ul>
+								<li><i class="fa fa-calendar" aria-hidden="true"></i> 1 year</li>
+								<li><i class="fa fa-users" aria-hidden="true"></i> 56 Student</li>
+								<li><i class="fa fa-book" aria-hidden="true"></i> 7 Books</li>
+							</ul>
+						</div>
+					</div>
+                </div>
+				
+				<div class="col-lg-3 col-md-6 col-12">
+                    <div class="course-item">
+						<div class="image-blog">
+							<img src="images/blog_3.jpg" alt="" class="img-fluid">
+						</div>
+						<div class="course-br">
+							<div class="course-title">
+								<h2><a href="https://en.wikipedia.org/wiki/Commerce" title="">Commerce</a></h2>
+							</div>
+							<div class="course-desc">
+								<p>Commerce is a process of exchanging goods and services. It includes all the activities which are directly or indirectly involves the exchanges.</p>
+							</div>
+							<div class="course-rating">
+								4.5
+								<i class="fa fa-star"></i>	
+								<i class="fa fa-star"></i>	
+								<i class="fa fa-star"></i>	
+								<i class="fa fa-star"></i>	
+								<i class="fa fa-star-half"></i>								
+							</div>
+						</div>
+						<div class="course-meta-bot">
+							<ul>
+								<li><i class="fa fa-calendar" aria-hidden="true"></i> 1 year</li>
+								<li><i class="fa fa-users" aria-hidden="true"></i> 56 Student</li>
+								<li><i class="fa fa-book" aria-hidden="true"></i> 7 Books</li>
+							</ul>
+						</div>
+					</div>
+                </div>
+				
+				
+                </div>
+            </div>
+        </div>
+    </div>\
+   
+   
+    <footer class="footer">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-4 col-md-4 col-xs-12">
+                    <div class="widget clearfix">
+                        <div class="widget-title">
+                            <h3>About US</h3>
+                        </div>
+                        <p> Moti Mavi School, located in the airawati-2 baraula, Pyuthan 
+.</p>   
+						<div class="footer-right">
+							<ul class="footer-links-soi">
+								<li><a href="https://www.facebook.com/pratikgc11"><i class="fa fa-facebook"></i></a></li>
+								<li><a href="https://www.youtube.com/channel/UC8rm414ewwa9IEjp4INQYXQ"><i class="fa fa-youtube"></i></a></li>
+						</div>						
+                    </div>
+                </div>
+
+			
+				
+                <div class="col-lg-4 col-md-4 col-xs-12">
+                    <div class="widget clearfix">
+                        <div class="widget-title">
+                            <h3>Contact Details</h3>
+                        </div>
+
+                        <ul class="footer-links">
+                            <li><a href="mailto:#">pratikgc11111@gmail.com</a></li>
+                            <li><a href="mailto:#">motimavibaraula2022@gmail.com</a></li>
+                          
+                            <li>9822983064</li>
+                        </ul>
+                    </div>
+                </div>
+				
+            </div>
+        </div>
+    </footer>
+
+    <div class="copyrights">
+        <div class="container">
+            <div class="footer-distributed">
+                <div class="footer-center">                   
+                    <p class="footer-company-name">Copyright &copy; 2022 All Rights Reserved | <a href="#">Pratik GC</a> </p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <a href="#" id="scroll-to-top" class="dmtop global-radius"><i class="fa fa-angle-up"></i></a>
+
+    <script src="js/all.js"></script>
+
+    <script src="js/custom.js"></script>
+	<script src="js/timeline.min.js"></script>
+	<script>
+		timeline(document.querySelectorAll('.timeline'), {
+			forceVerticalMode: 700,
+			mode: 'horizontal',
+			verticalStartPosition: 'left',
+			visibleItems: 4
+		});
+	</script>
+</body>
+</html>
